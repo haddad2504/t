@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio de Arquitectura</title>
+    <style>
+        :root {
+            --beige: #f5f5dc;
+            --negro: #000000;
+            --verde-oliva: #556b2f;
+            --violeta: #8a2be2;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--beige);
+            color: var(--negro);
+        }
+
+        header {
+            background-color: var(--verde-oliva);
+            color: var(--beige);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: var(--negro);
+            padding: 0.5rem;
+        }
+
+        nav a {
+            color: var(--beige);
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--violeta);
+        }
+
+        .hero {
+            background-color: var(--violeta);
+            color: var(--beige);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            margin: 0;
+        }
+
+        .content {
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background-color: var(--beige);
+            border: 1px solid var(--verde-oliva);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+        }
+
+        .card h3 {
+            color: var(--violeta);
+        }
+
+        footer {
+            background-color: var(--negro);
+            color: var(--beige);
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Estudio de Arquitectura</h1>
+    </header>
+    <nav>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <section class="hero">
+        <h1>Diseñando el Futuro</h1>
+        <p>Explora nuestra visión arquitectónica que combina elegancia, funcionalidad y sostenibilidad.</p>
+    </section>
+    <section class="content">
+        <div class="card">
+            <h3>Proyecto Residencial</h3>
+            <p>Un diseño contemporáneo que maximiza la luz natural y los espacios abiertos.</p>
+        </div>
+        <div class="card">
+            <h3>Centro Urbano</h3>
+            <p>Una solución innovadora para revitalizar las áreas metropolitanas.</p>
+        </div>
+        <div class="card">
+            <h3>Espacios Verdes</h3>
+            <p>Proyectos que integran la naturaleza en el entorno urbano.</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Estudio de Arquitectura. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
